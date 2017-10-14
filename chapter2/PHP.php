@@ -28,3 +28,15 @@ function line(){
 };
 
 line();
+
+function sidewaysTriangle() {
+	for ($i = -3; $i <= 3; $i++) {
+		for ($j = 1; $j <= 4 - abs($i); $j++) {
+			echo '#';
+		}
+		echo "\r\n";
+	} 
+
+}
+
+sidewaysTriangle();
