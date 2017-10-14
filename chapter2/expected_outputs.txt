@@ -1,3 +1,7 @@
+–––––––––––––––
+Output Patterns
+–––––––––––––––
+
 Problem: Half of a Square
 #####
 ####
@@ -23,3 +27,10 @@ Problem: A Sideways Triangle
 ###
 ##
 #
+
+––––––––––––––––
+Input Processing
+––––––––––––––––
+
+Problem: Luhn Checksum Validation
+    Add the value of every digit of a number together, doubling every other one starting from the right.  If a number is 2 digits after doubling, add each of those digits separately.  The number is valid if the sum is divisible by 10.
