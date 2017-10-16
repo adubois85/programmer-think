@@ -21,5 +21,14 @@
 	$result = preg_replace("/\D/", "", $input);
 	return $result;
  }
-$test = "Hello World 19";
- removeNonNumbers($test);
+
+ // We'll cast our input to an array and use that to do our math
+ // We'll also start filling from right to left for ease later on
+
+ function fillArray($input){
+	 $array = array();
+	 for($i = strlen($input) - 1; $i >= 0; $i--){
+		 $array[] = $input[$i];
+	 }
+	 return $array;
+ }
