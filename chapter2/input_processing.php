@@ -47,7 +47,7 @@ function luhnCheck($number) {
 			$sum += doubleDigit($value);
 		} 
 		else {
-			$sum += $value
+			$sum += $value;
 		}
 	}
 	if($sum % 10 === 0){
