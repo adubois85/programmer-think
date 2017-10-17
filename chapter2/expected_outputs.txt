@@ -34,3 +34,32 @@ Input Processing
 
 Problem: Luhn Checksum Validation
     Add the value of every digit of a number together, doubling every other one starting from the right.  If a number is 2 digits after doubling, add each of those digits separately.  The number is valid if the sum is divisible by 10.
+
+
+______________
+Tracking State
+––––––––––––––
+
+Problem: Decode a Message
+    A message has been encode as a text stream to be read character by character.  The stream contains a series of positive, comma-delimited integers.  The character represented by an integer depends on the current decoding mode: uppercase, lowercase, or punctuation.
+
+    In uppercase mode, an integer represents an uppercase letter such that modulo 27 is equal to that letter's position in the alphabet (e.g. 1 = A).
+
+    In lowercase mode, an integer represents a lowercase letter such that modulo 27 is equal to that letter's position in the alphabet (e.g. 1 = a).
+
+    In punctuation mode, the integer is determined by modulo 9 and the following table.
+
+
+    Number  Symbol
+    ––––––––––––––
+    1       ! (exlamation mark)   
+    2       ? (question mark)
+    3       ' (apostrophe) 
+    4       . (period)
+    5         (space)
+    6       ; (semi-colon)
+    7       " (double quotation)
+    8       ' (single quote)
+    
+
+    Each message starts in uppercase mode.  Whenever an operation results in modulo = 0, the decoding mode cycles to the next mode (uppercase -> lowercase -> punctuation -> upercase -> etc.)
