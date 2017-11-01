@@ -23,15 +23,29 @@ function trackingState(){/**
                 switch($decryptMode){
                     // Uppercase mode
                     case 0:
-                        echo "Uppercase";
+                        if($value % 27 === 0){
+                            $decryptMode = 1;
+                            break;
+                        } else {
+                            echo chr(64 + ($value % 27)); 
+                        }
                         break;
                     // Lowercase mode
                     case 1:
-                        echo "Lowercase";
+                        if($value % 27 === 0){
+                            $decryptMode = 2;
+                            break;
+                        } else {
+                            echo chr(96 + ($value % 27)); 
+                        }
                         break;
                     // Punctuation mode
                     case 2:
-                        echo "Punctuation";
+                        if($value % 9 === 0){
+                            $decryptMode = 0;
+                            break;
+                        } else {
+                            echo "PLACEHOLDER";
                         break;
                 }
             }
