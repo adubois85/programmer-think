@@ -72,9 +72,10 @@ function trackingState(){/**
 									break;
 							}
 						break;
+						}
 				}
 			}
 		}
-	}
 
+	}
 }
