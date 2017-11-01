@@ -20,7 +20,20 @@ function trackingState(){/**
     foreach($matches as $innerArray){
         if(is_array($innerArray)){
             foreach($innerArray as $value){
-                
+                switch($decryptMode){
+                    // Uppercase mode
+                    case 0:
+                        echo "Uppercase";
+                        break;
+                    // Lowercase mode
+                    case 1:
+                        echo "Lowercase";
+                        break;
+                    // Punctuation mode
+                    case 2:
+                        echo "Punctuation";
+                        break;
+                }
             }
         }
     }
