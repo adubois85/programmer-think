@@ -16,4 +16,13 @@ function trackingState(){/**
     $subject ='';
     preg_match_all($pattern, $subject, $matches);
 
+    // the regex returns a nested array, so we need to dig into it to get to the values we want
+    foreach($matches as $innerArray){
+        if(is_array($innerArray)){
+            foreach($innerArray as $value){
+                
+            }
+        }
+    }
+
 }
