@@ -56,17 +56,57 @@ Problem: Decode a Message
     In punctuation mode, the integer is determined by modulo 9 and the following table.
 
 
-    Number  Symbol
-    ––––––––––––––
-    1       ! (exlamation mark)   
-    2       ? (question mark)
-    3       ' (apostrophe) 
-    4       . (period)
-    5         (space)
-    6       ; (semi-colon)
-    7       " (double quotation)
-    8       ' (single quote)
+    Number | Symbol
+    –––––––––––––––
+    1        ! (exlamation mark)   
+    2        ? (question mark)
+    3        ' (apostrophe) 
+    4        . (period)
+    5          (space)
+    6        ; (semi-colon)
+    7        " (double quotation)
+    8        ' (single quote)
     
 
     Each message starts in uppercase mode.  Whenever an operation results in modulo = 0, the decoding mode cycles to the next
     mode (uppercase -> lowercase -> punctuation -> upercase -> etc.)
+
+__________
+Excercises
+––––––––––
+___
+2-1
+–––
+
+########
+ ######
+  ####
+   ##
+
+___
+2-2
+–––
+
+   ##   
+  ####  
+ ###### 
+########
+########
+ ######
+  ####
+   ##
+
+
+___
+2-3
+–––
+
+#            #
+ ##        ## 
+  ###    ###  
+   ########   
+   ########   
+  ###    ###  
+ ##        ## 
+#            #
+
