@@ -96,7 +96,6 @@ ___
   ####
    ##
 
-
 ___
 2-3
 –––
@@ -110,3 +109,38 @@ ___
  ##        ## 
 #            #
 
+___
+2-4
+–––
+
+Create your own symmetrical pattern of hash marks.
+
+___
+2-5
+–––
+
+Try writing a program for a different check-digit system than the Luhn formula.  It can validate an existing number or generate a check digit for a number.
+
+___
+2-6
+–––
+
+Try to write programs to convert between decimal and binary numbers and vice versa.
+
+___
+2-7
+–––
+
+Write a program that lets a user specify a biary, decimal, or hexidecimal input and output to any of those.
+
+___
+2-8
+–––
+
+Generalize the code from excercise 2-7 that converts any number from base 16 or less to any other number base.
+
+___
+2-9
+–––
+
+Write a program that reads a line of text and counts the number of words, identifies the length of the longest word, the greatest number of vowels in a word, and/or any other statistics you can think of.
