@@ -17,7 +17,7 @@
 	// outer loop to go through each item in the array
 	for ($i = 1; $i < $arraySize; $i++){
 		// inner loop compares the current value with previous values and sorts it accordingly
-		for($j = $i; $tempArray[$j] > $tempArray[$j - 1]; $j--){
+		for($j = $i; $inputArray[$j] > $inputArray[$j - 1]; $j--){
 			$temp = $tempArray[$j - 1];
 			$tempArray[$j - 1] = $tempArray[$j];
 			$tempArray[$j] = $temp;
