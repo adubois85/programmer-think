@@ -3,11 +3,13 @@
  * An algorithm for sorting using an insertion method
  */
 
- function sortInsertion(array $inputArray){
+
+// Working off the example in the book for C++ ... this doesn't work right and is too much of a headache to get working correctly
+ function sortInsertionBad(array $inputArray){
 	// note: create a variable that stores the size of the array so you aren't counting it with every iteration of a for loop; otherwise, a foreach loop will also work and is very slightly faster
 	$arraySize = count($inputArray);
 	// create a temporary array with the first element from our input as its first element as well so we can compare later elements to it for the sorting
-	$tempArray = $inputArray[0];
+	$sortedArray[] = $inputArray[0];
 
 	//If the input is a single number, then it is, by definition, already sorted
 	if ($arraySize == 1){
@@ -24,3 +26,6 @@
 		}
 	}
 }
+
+// Let's try that again working from scratch and what I know already rather than the book
+function sortInsertion
