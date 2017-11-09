@@ -28,4 +28,14 @@
 }
 
 // Let's try that again working from scratch and what I know already rather than the book
-function sortInsertion
+function sortInsertion($inputArray) {
+	$size = count($inputArray);
+	$sortedArray = $inputArray[0];
+	for($i = 1; $i < $size; $i++){
+		$pointer = 0;
+		while ($inputArray[$i] < $sortedArray[$pointer - 1]){
+			$sortedArray[$i] = $sortedArray[$i - 1];
+			$sortedArray[$i - 1] = $inputArray[$i];
+		}		
+	}
+}
